@@ -1,0 +1,92 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid401\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww15840\viewh13060\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 \ul \ulc0 AIMS Tutorial\
+\
+Hardware Setup\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 \ulnone {\listtext	1.	}Upload Matlab_Lux.ino code into your Arduino (how to -> {\field{\*\fldinst{HYPERLINK "https://www.arduino.cc/en/Main/Howto"}}{\fldrslt https://www.arduino.cc/en/Main/Howto}})\
+{\listtext	2.	}Connect the Lux sensor to the Arduino ({\field{\*\fldinst{HYPERLINK "https://learn.adafruit.com/tsl2561/wiring"}}{\fldrslt https://learn.adafruit.com/tsl2561/wiring}})\ul \ulc0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Setup \
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 \ulnone {\listtext	1.	}Arduino -> Connect Absorbance -> * input COM # (Arduino) *\
+{\listtext	2.	}Absorbance Tab (top right) -> Absorbance Value Setup -> *input # of readings (total amount of readings)* & *input how many to average (how to average the readings)*\
+{\listtext	3.	}Get Value -> *this will be your blank value* \
+{\listtext	4.	}Blank Value box -> *input blank value *\
+{\listtext	5.	}Toggle Absorbance ON\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul Creating Sequence with Special functions\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 \ulnone {\listtext	1.	}Create a sequence (matGUI Tutorial README) -> without saving the sequence yet\
+{\listtext	2.	}*input special functions into sequence table*  \
+{\listtext	3.	}Save Sequence -> *input sequence name*\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul \
+Input special function into sequence table\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ulnone Description:\
+You are able to input some special characters into the sequence table.\
+These special characters represent special functions that the system can perform during the experiment.\
+\
+For Example, move droplet over 5 electrodes and wait for 10sec and then take a absorbance value.\
+what it looks like :\
+1	2	3	4	5	T	A\
+					10		\
+Options : \
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf0 {\listtext	\'95	}Read Absorbance Value (takes a reading from LUX sensor)\
+{\listtext	\'95	}Read Blank Value (takes a reading from LUX sensor and puts it into the Blank lux box)\
+{\listtext	\'95	}Input Time (pauses the sequence for # seconds) (Edit Sequence Table -> put # under the T )\
+{\listtext	\'95	}Input Actuation Time (modifies how long an electrode stays on) (Edit Sequence Table -> put # under the AT )\
+{\listtext	\'95	}Input Voltage (modifies the voltage output of the func.gen) (Edit Sequence Table -> put # under the V)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul Creating a Sequencer (tab called \'93Table of Sequences\'94)\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ulnone Description:\
+Allows to have a sequence of sequences (saved) and have control over when it goes to the next \'93step\'94 (ie. next sequence to be performed) \ul \
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls5\ilvl0\cf0 \ulnone {\listtext	1.	}Sequence name -> *input sequence name (saved) -> without the \'93sequence_\'94 *\
+{\listtext	2.	}End Cond. -> * input the conditions it checks (whole word with first letter Capital)* -> If condition evaluates to be TRUE = goes to the next step in the sequencer\
+{\listtext	3.	}Options (for End Cond.) : \
+{\listtext	4.	}\'93Cycle\'94  (how many times the sequence is repeated)\
+{\listtext	5.	} \'93Time\'94  (how many seconds it will run the sequence)\
+{\listtext	6.	} \'93OD\'94 (at which OD will it go to the next sequence)\
+{\listtext	7.	}End Val -> *input the value for the above conditions*\
+{\listtext	8.	}# Steps -> *input the number of steps in the sequence* \
+{\listtext	9.	}Box with red 0 -> *input the number of steps in the 
+\i sequencer 
+\i0 *\
+{\listtext	10.	}Activate Sequencer \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul \
+}

@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red160\green32\blue240;\red160\green32\blue240;
+\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c0\c0;\csgenericrgb\c62745\c12549\c94118;\csgenericrgb\c62745\c12549\c94118;
+\csgenericrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid401\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid501\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww22020\viewh12180\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 \ul \ulc0 matGUI Tutorial  \
+\
+Setup \
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 \ulnone {\listtext	1.	}Arduino -> Connect Automation -> * input COM # (Arduino) *\
+{\listtext	2.	}uEye -> Connect \
+{\listtext	3.	}Connect Function Generator \
+{\listtext	4.	}LOCK -> *modify voltage*\
+{\listtext	5.	}Output -> ENABLE\
+{\listtext	6.	}Time -> *input actuation time (seconds)*\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 Important Note : \cf0 \
+\
+\cf2 - if you get any errors when trying to connect the \'93Function gen\'94 or\
+the \'93Camera\'94, it is due to the model being different than what we use\
+in our lab. \
+\
+Camera :\
+code file : standardGUIv2.m\
+code line : 318\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs20 \cf0 vid = videoinput(\cf3 'winvideo'\cf0 ,1,\cf3 'RGB32_1280x1024'\cf0 ) ;\
+% replace the \cf4 'RGB32_1280x1024\'92\cf5 with your model\
+more info here : {\field{\*\fldinst{HYPERLINK "https://www.mathworks.com/help/imaq/videoinput.html"}}{\fldrslt https://www.mathworks.com/help/imaq/videoinput.html}}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 code file : standardGUIv2.m\
+code line : 3732\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs20 \cf0 myFGen.Resource = \cf3 'USB0::0x0957::0x1507::MY48016978::0::INSTR'\cf0 ;\
+\pard\pardeftab720\partightenfactor0
+\cf0 % replace the \cf4 'USB0::0x0957::0x1507::MY48016978::0::INSTR' \cf5 with your model\
+more info here : {\field{\*\fldinst{HYPERLINK "https://www.mathworks.com/help/instrument/fgen.html"}}{\fldrslt https://www.mathworks.com/help/instrument/fgen.html}}
+\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul Creating Grid\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 \ulnone {\listtext	1.	}New Grid Icon -> *input Rows & Columns* \
+{\listtext	2.	}Numbering -> *click grid button to number electrode*\
+{\listtext	3.	}Save Grid Icon -> *input grid name*\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 \ul Creating Sequence \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf0 \ulnone {\listtext	1.	}Sequence Actuation \
+{\listtext	2.	}*click on grid electrode to select which one to be actuated on step #* (then, click on a \'93empty space\'94)\
+{\listtext	3.	}*press space to save those electrodes into sequence table*\
+{\listtext	4.	}*repeat until finish with sequence *\
+{\listtext	5.	}Save sequence -> *input name (leave the \'93sequence_\'94 )*\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul \
+Loading Sequence & Sequence Actuation\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls5\ilvl0\cf0 \ulnone {\listtext	1.	}Load Sequence -> *input sequence name*\
+{\listtext	2.	}Box with a red 0 -> *Input number of steps in that sequence *  \
+{\listtext	3.	}Activate Loaded Sequence\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul \
+Realtime Actuation\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls6\ilvl0\cf0 \ulnone {\listtext	1.	}Real-time Actuation \
+{\listtext	2.	}*click on electrode to be turned on (can have multiple electrodes)* (then, click on a \'93empty space\'94)\
+{\listtext	3.	}*press on space to activate them*\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul \
+\
+\
+\
+}
