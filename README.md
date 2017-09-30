@@ -25,3 +25,6 @@ the README file.
 - (AIMS3D.stl)
 A stl file that is used to 3D print the whole physical setup required 
 by the AIMS system. 
+
+Requirements List : 
+
