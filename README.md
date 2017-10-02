@@ -28,3 +28,20 @@ by the AIMS system.
 
 Requirements List : 
 
+DMF Automation System : 
+- Computer 
+- Arduino
+- Function Generator 
+- Amplifier
+- Power Supply
+- Pogo pin Board
+- Control Board
+- Matlab (with toolboxes : instrument control, Arduino support)
+
+AIMS System :
+- Arduino
+- 3D print of the AIMS.stl
+- LED (600nm)
+- Adafruit TSL2561 Digital Luminosity/Lux/Light Sensor Breakout
+
+
