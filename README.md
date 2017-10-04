@@ -3,7 +3,7 @@ AIMS (Automated Induction Microfluidics System)
 
 General Description : 
 - AIMS is a digital microfluidics automation system that is able to read 
-the absorbance of a droplet. It is advised to read the matGUI Tutorial first 
+the absorbance of a droplet. It is advised to read the matGUI Tutorial first (in the Automation repository)
 and then read the AIMS Tutorial. 
 
 Description of the files : 
@@ -11,11 +11,6 @@ Description of the files :
 - (matGUI code AIMS.zip) 
 The main code to run the matGUI program
 system and the AIMS system.
-
-- (matGUI Tutorial.zip)
-Folder which contains a README file which explains how to operate the
-matGUI program. It also contains a short video that can be viewed as reference 
-to the README file. 
 
 - (AIMS Tutorial.zip)
 Folder which contains a README file which explains how to operate the AIMS 
