@@ -31,9 +31,9 @@ Requirements List :
 DMF Automation System : 
 - Computer 
 - Arduino
-- Function Generator 
-- Amplifier
-- Power Supply
+- Function Generator (Agilent 33220A)
+- Amplifier (TREK PZD700A)
+- Power Supply (Agilent E3631A)
 - Pogo pin Board
 - Control Board
 - Matlab (with toolboxes : instrument control, Arduino support)
